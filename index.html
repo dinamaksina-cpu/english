@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f8fb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="English 5000" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>English Vocabulary Trainer</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">VOCABULARY TRAINER</div>
+        <h1>English Vocabulary</h1>
+      </div>
+      <button id="themeBtn" class="icon-btn" aria-label="Змінити тему">◐</button>
+    </header>
+
+    <section class="progress-card">
+      <div class="progress-head"><span>Прогрес</span><strong id="progressText">0 / 2978</strong></div>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      <div class="stats-row">
+        <div><b id="knownCount">0</b><span>Знаю</span></div>
+        <div><b id="reviewCount">0</b><span>Повторити</span></div>
+        <div><b id="favCount">0</b><span>Обрані</span></div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="segmented four" id="orderControl">
+        <button data-order="random" class="active">Random</button>
+        <button data-order="az">A–Z</button>
+        <button data-order="review">Помилки</button>
+        <button data-order="fav">★ Обрані</button>
+      </div>
+      <div class="control-grid">
+        <label><span>Тема</span><select id="topicSelect"><option value="All">Усі теми</option></select></label>
+        <label><span>Режим</span><select id="directionSelect"><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
+      </div>
+      <div class="search-wrap"><input id="searchInput" type="search" placeholder="Пошук слова…" autocomplete="off" /></div>
+    </section>
+
+    <section class="card-wrap">
+      <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Відкрити відповідь">
+        <div class="card-topline"><span id="topicBadge" class="badge">General</span><button id="favBtn" class="star-btn" aria-label="Додати в обрані">☆</button></div>
+        <div id="frontLabel" class="side-label">ENGLISH</div>
+        <div id="frontText" class="front-text">Loading…</div>
+        <button id="speakBtn" class="speak-btn">🔊 Listen</button>
+        <div id="answerBox" class="answer-box hidden">
+          <div class="divider"></div>
+          <div id="backText" class="back-text"></div>
+          <div id="pronText" class="pron"></div>
+          <div id="ipaText" class="ipa"></div>
+        </div>
+        <div id="tapHint" class="tap-hint">Натисни картку, щоб побачити відповідь</div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="dontKnowBtn" class="action secondary">Не знаю</button>
+      <button id="knowBtn" class="action primary">Знаю</button>
+    </section>
+
+    <section class="footer-actions">
+      <button id="prevBtn">← Назад</button>
+      <button id="shuffleBtn">↻ Інше слово</button>
+      <button id="nextBtn">Далі →</button>
+    </section>
+
+    <section class="settings-card">
+      <div><strong>Щоденна ціль</strong><span id="goalLabel">20 слів</span></div>
+      <input id="goalRange" type="range" min="5" max="50" step="5" value="20" />
+      <small>Прогрес зберігається на цьому пристрої автоматично.</small>
+    </section>
+
+    <footer>Версія 1 використовує 2 978 підготовлених карток Oxford 3000. Архітектура готова для розширення до Oxford 5000.</footer>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
