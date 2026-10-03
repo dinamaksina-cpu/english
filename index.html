@@ -17,13 +17,13 @@
     <header class="topbar">
       <div>
         <div class="eyebrow">VOCABULARY TRAINER</div>
-        <h1>English Vocabulary</h1>
+        <h1>English 5000</h1>
       </div>
       <button id="themeBtn" class="icon-btn" aria-label="Змінити тему">◐</button>
     </header>
 
     <section class="progress-card">
-      <div class="progress-head"><span>Прогрес</span><strong id="progressText">0 / 2978</strong></div>
+      <div class="progress-head"><span>Прогрес</span><strong id="progressText">0 / 0</strong></div>
       <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
       <div class="stats-row">
         <div><b id="knownCount">0</b><span>Знаю</span></div>
@@ -39,16 +39,18 @@
         <button data-order="review">Помилки</button>
         <button data-order="fav">★ Обрані</button>
       </div>
-      <div class="control-grid">
+      <div class="control-grid three">
+        <label><span>Список</span><select id="bandSelect"><option value="All">Oxford 5000 · Усі</option></select></label>
         <label><span>Тема</span><select id="topicSelect"><option value="All">Усі теми</option></select></label>
         <label><span>Режим</span><select id="directionSelect"><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
       </div>
+      <div class="filter-meta"><span id="visibleCount">0 карток</span></div>
       <div class="search-wrap"><input id="searchInput" type="search" placeholder="Пошук слова…" autocomplete="off" /></div>
     </section>
 
     <section class="card-wrap">
       <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Відкрити відповідь">
-        <div class="card-topline"><span id="topicBadge" class="badge">General</span><button id="favBtn" class="star-btn" aria-label="Додати в обрані">☆</button></div>
+        <div class="card-topline"><div class="badges"><span id="topicBadge" class="badge">General</span><span id="levelBadge" class="badge subtle">A1–B2</span></div><button id="favBtn" class="star-btn" aria-label="Додати в обрані">☆</button></div>
         <div id="frontLabel" class="side-label">ENGLISH</div>
         <div id="frontText" class="front-text">Loading…</div>
         <button id="speakBtn" class="speak-btn">🔊 Listen</button>
@@ -79,7 +81,7 @@
       <small>Прогрес зберігається на цьому пристрої автоматично.</small>
     </section>
 
-    <footer>Версія 1 використовує 2 978 підготовлених карток Oxford 3000. Архітектура готова для розширення до Oxford 5000.</footer>
+    <footer>Oxford 5000 edition · 4 974 навчальні картки: Oxford 3000 + розширення B2–C1. Повторні headwords із різними рівнями можуть бути окремими картками.</footer>
   </main>
 <script src="app.js"></script>
 </body>
