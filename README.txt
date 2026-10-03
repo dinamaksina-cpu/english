@@ -1,20 +1,30 @@
-English 5000 Vocabulary Trainer — deployment package
+English 5000 Vocabulary Trainer v3
 
-Files are ready for static hosting (GitHub Pages, Vercel, Netlify, Cloudflare Pages, etc.).
-Upload the CONTENTS of this folder to your site/repository.
+Static PWA ready for GitHub Pages, Vercel, Netlify or Cloudflare Pages.
+Upload the CONTENTS of this folder.
 
-Vocabulary data:
-- 2,978 prepared Oxford 3000 cards (A1–B2 core)
-- 1,996 additional Oxford 5000-extension cards (B2–C1)
-- 4,974 learning cards total; repeated headwords/senses in source lists can be consolidated or repeated, so card count is not identical to the list's marketing name.
+Vocabulary:
+- 4,974 Oxford 3000 + Oxford 5000-extension learning cards.
 
-Features:
-- Random / A–Z / mistakes / favourites
-- Oxford 3000 vs Oxford 5000 extra filter
-- topic filter
-- English → Ukrainian / Ukrainian → English
-- search
-- British-English speech synthesis (device/browser voice)
-- Ukrainian learner-friendly pronunciation + IPA
-- progress stored locally on the device
-- installable PWA
+Study features:
+- Random / A-Z / mistakes / favourites
+- Oxford 3000 vs Oxford 5000 extra
+- topic filter and search
+- EN -> UA / UA -> EN cards
+- British speech synthesis
+
+Quiz & test features:
+- 4-choice quiz: EN -> UA, UA -> EN or mixed
+- typed test: UA -> EN
+- listening test: hear English, type the word
+- 10/20/30/50 question options (where available)
+- wrong answers automatically added to Review
+- per-word attempts/correct/wrong/streak stats
+- overall accuracy, completed quizzes/tests, best scores
+- weak-words list
+- daily learning streak
+
+Progress persistence:
+- Stored in localStorage under the existing vocabProgress key, so v2 progress remains compatible on the same domain.
+- Export/import progress JSON backup included.
+- PWA cache bumped to vocab-v3.

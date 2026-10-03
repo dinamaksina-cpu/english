@@ -23,65 +23,163 @@
     </header>
 
     <section class="progress-card">
-      <div class="progress-head"><span>Прогрес</span><strong id="progressText">0 / 0</strong></div>
+      <div class="progress-head"><span>Вивчено</span><strong id="progressText">0 / 0</strong></div>
       <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
-      <div class="stats-row">
+      <div class="stats-row four-stats">
         <div><b id="knownCount">0</b><span>Знаю</span></div>
         <div><b id="reviewCount">0</b><span>Повторити</span></div>
-        <div><b id="favCount">0</b><span>Обрані</span></div>
+        <div><b id="accuracyTop">—</b><span>Точність</span></div>
+        <div><b id="streakTop">0</b><span>Днів</span></div>
       </div>
     </section>
 
-    <section class="controls">
-      <div class="segmented four" id="orderControl">
-        <button data-order="random" class="active">Random</button>
-        <button data-order="az">A–Z</button>
-        <button data-order="review">Помилки</button>
-        <button data-order="fav">★ Обрані</button>
-      </div>
-      <div class="control-grid three">
-        <label><span>Список</span><select id="bandSelect"><option value="All">Oxford 5000 · Усі</option></select></label>
-        <label><span>Тема</span><select id="topicSelect"><option value="All">Усі теми</option></select></label>
-        <label><span>Режим</span><select id="directionSelect"><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
-      </div>
-      <div class="filter-meta"><span id="visibleCount">0 карток</span></div>
-      <div class="search-wrap"><input id="searchInput" type="search" placeholder="Пошук слова…" autocomplete="off" /></div>
-    </section>
+    <nav class="mode-tabs" id="modeTabs" aria-label="Режим навчання">
+      <button data-view="study" class="active">Картки</button>
+      <button data-view="quiz">Вікторина</button>
+      <button data-view="test">Тест</button>
+      <button data-view="progress">Прогрес</button>
+    </nav>
 
-    <section class="card-wrap">
-      <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Відкрити відповідь">
-        <div class="card-topline"><div class="badges"><span id="topicBadge" class="badge">General</span><span id="levelBadge" class="badge subtle">A1–B2</span></div><button id="favBtn" class="star-btn" aria-label="Додати в обрані">☆</button></div>
-        <div id="frontLabel" class="side-label">ENGLISH</div>
-        <div id="frontText" class="front-text">Loading…</div>
-        <button id="speakBtn" class="speak-btn">🔊 Listen</button>
-        <div id="answerBox" class="answer-box hidden">
-          <div class="divider"></div>
-          <div id="backText" class="back-text"></div>
-          <div id="pronText" class="pron"></div>
-          <div id="ipaText" class="ipa"></div>
+    <section id="studyView" class="view active">
+      <section class="controls">
+        <div class="segmented four" id="orderControl">
+          <button data-order="random" class="active">Random</button>
+          <button data-order="az">A–Z</button>
+          <button data-order="review">Помилки</button>
+          <button data-order="fav">★ Обрані</button>
         </div>
-        <div id="tapHint" class="tap-hint">Натисни картку, щоб побачити відповідь</div>
-      </div>
+        <div class="control-grid three">
+          <label><span>Список</span><select id="bandSelect"><option value="All">Oxford 5000 · Усі</option></select></label>
+          <label><span>Тема</span><select id="topicSelect"><option value="All">Усі теми</option></select></label>
+          <label><span>Режим</span><select id="directionSelect"><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
+        </div>
+        <div class="filter-meta"><span id="visibleCount">0 карток</span></div>
+        <div class="search-wrap"><input id="searchInput" type="search" placeholder="Пошук слова…" autocomplete="off" /></div>
+      </section>
+
+      <section class="card-wrap">
+        <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Відкрити відповідь">
+          <div class="card-topline"><div class="badges"><span id="topicBadge" class="badge">General</span><span id="levelBadge" class="badge subtle">A1–B2</span></div><button id="favBtn" class="star-btn" aria-label="Додати в обрані">☆</button></div>
+          <div id="frontLabel" class="side-label">ENGLISH</div>
+          <div id="frontText" class="front-text">Loading…</div>
+          <button id="speakBtn" class="speak-btn">🔊 Listen</button>
+          <div id="answerBox" class="answer-box hidden">
+            <div class="divider"></div>
+            <div id="backText" class="back-text"></div>
+            <div id="pronText" class="pron"></div>
+            <div id="ipaText" class="ipa"></div>
+          </div>
+          <div id="tapHint" class="tap-hint">Натисни картку, щоб побачити відповідь</div>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="dontKnowBtn" class="action secondary">Не знаю</button>
+        <button id="knowBtn" class="action primary">Знаю</button>
+      </section>
+
+      <section class="footer-actions">
+        <button id="prevBtn">← Назад</button>
+        <button id="shuffleBtn">↻ Інше слово</button>
+        <button id="nextBtn">Далі →</button>
+      </section>
     </section>
 
-    <section class="actions">
-      <button id="dontKnowBtn" class="action secondary">Не знаю</button>
-      <button id="knowBtn" class="action primary">Знаю</button>
+    <section id="quizView" class="view">
+      <section id="quizSetup" class="panel learning-panel">
+        <div class="panel-icon">✓</div>
+        <h2>Вікторина</h2>
+        <p>Обери правильний переклад або англійське слово з 4 варіантів.</p>
+        <div class="setup-grid">
+          <label><span>Напрямок</span><select id="quizDirection"><option value="mixed">Змішано</option><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
+          <label><span>Кількість</span><select id="quizCount"><option value="10">10 питань</option><option value="20" selected>20 питань</option><option value="30">30 питань</option><option value="50">50 питань</option></select></label>
+          <label><span>Слова</span><select id="quizPool"><option value="all">Усі Oxford 5000</option><option value="core">Oxford 3000</option><option value="extra">Oxford 5000 extra</option><option value="review">Тільки помилки</option><option value="current">Поточний фільтр карток</option></select></label>
+        </div>
+        <button id="startQuizBtn" class="big-primary">Почати вікторину</button>
+      </section>
+
+      <section id="quizSession" class="panel session-panel hidden">
+        <div class="session-head"><span id="quizStep">1 / 20</span><strong id="quizScore">0 правильних</strong></div>
+        <div class="mini-track"><div id="quizBar"></div></div>
+        <div id="quizLabel" class="side-label">ОБЕРИ ПЕРЕКЛАД</div>
+        <div id="quizPrompt" class="quiz-prompt"></div>
+        <button id="quizSpeakBtn" class="speak-btn hidden">🔊 Listen</button>
+        <div id="quizOptions" class="quiz-options"></div>
+        <div id="quizFeedback" class="feedback hidden"></div>
+        <button id="quizNextBtn" class="big-primary hidden">Далі</button>
+      </section>
+
+      <section id="quizResult" class="panel result-panel hidden">
+        <div class="result-circle"><strong id="quizPercent">0%</strong><span>результат</span></div>
+        <h2 id="quizResultTitle">Готово!</h2>
+        <p id="quizResultText"></p>
+        <div class="result-actions"><button id="quizAgainBtn" class="big-primary">Ще раз</button><button id="quizMistakesBtn" class="big-secondary">Повторити помилки</button></div>
+      </section>
     </section>
 
-    <section class="footer-actions">
-      <button id="prevBtn">← Назад</button>
-      <button id="shuffleBtn">↻ Інше слово</button>
-      <button id="nextBtn">Далі →</button>
+    <section id="testView" class="view">
+      <section id="testSetup" class="panel learning-panel">
+        <div class="panel-icon">⌨</div>
+        <h2>Тест без підказок</h2>
+        <p>Тут треба самій написати англійське слово. Це складніше й краще перевіряє пам’ять.</p>
+        <div class="setup-grid">
+          <label><span>Тип</span><select id="testMode"><option value="uk-en">Українська → English</option><option value="listen-en">Аудіювання → English</option></select></label>
+          <label><span>Кількість</span><select id="testCount"><option value="10">10 слів</option><option value="20" selected>20 слів</option><option value="30">30 слів</option></select></label>
+          <label><span>Слова</span><select id="testPool"><option value="all">Усі Oxford 5000</option><option value="core">Oxford 3000</option><option value="extra">Oxford 5000 extra</option><option value="review">Тільки помилки</option><option value="current">Поточний фільтр карток</option></select></label>
+        </div>
+        <button id="startTestBtn" class="big-primary">Почати тест</button>
+      </section>
+
+      <section id="testSession" class="panel session-panel hidden">
+        <div class="session-head"><span id="testStep">1 / 20</span><strong id="testScore">0 правильних</strong></div>
+        <div class="mini-track"><div id="testBar"></div></div>
+        <div id="testLabel" class="side-label">НАПИШИ АНГЛІЙСЬКОЮ</div>
+        <div id="testPrompt" class="quiz-prompt"></div>
+        <button id="testSpeakBtn" class="speak-btn hidden">🔊 Прослухати слово</button>
+        <input id="testInput" class="answer-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Введи слово англійською…" />
+        <div id="testFeedback" class="feedback hidden"></div>
+        <div class="test-buttons"><button id="testSubmitBtn" class="big-primary">Перевірити</button><button id="testNextBtn" class="big-primary hidden">Далі</button></div>
+      </section>
+
+      <section id="testResult" class="panel result-panel hidden">
+        <div class="result-circle"><strong id="testPercent">0%</strong><span>результат</span></div>
+        <h2>Тест завершено</h2>
+        <p id="testResultText"></p>
+        <div class="result-actions"><button id="testAgainBtn" class="big-primary">Ще раз</button><button id="testMistakesBtn" class="big-secondary">Вчити помилки</button></div>
+      </section>
+    </section>
+
+    <section id="progressView" class="view">
+      <section class="panel progress-dashboard">
+        <div class="dashboard-title"><div><div class="eyebrow">ТВОЯ СТАТИСТИКА</div><h2>Прогрес навчання</h2></div><div class="streak-pill">🔥 <b id="dashStreak">0</b> днів</div></div>
+        <div class="metric-grid">
+          <div class="metric"><span>Точність</span><strong id="dashAccuracy">—</strong><small>усі вікторини й тести</small></div>
+          <div class="metric"><span>Відповідей</span><strong id="dashAnswers">0</strong><small>всього перевірено</small></div>
+          <div class="metric"><span>Вікторин</span><strong id="dashQuizzes">0</strong><small>завершено</small></div>
+          <div class="metric"><span>Тестів</span><strong id="dashTests">0</strong><small>завершено</small></div>
+          <div class="metric"><span>Краща вікторина</span><strong id="dashBestQuiz">—</strong><small>найвищий %</small></div>
+          <div class="metric"><span>Кращий тест</span><strong id="dashBestTest">—</strong><small>найвищий %</small></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><h3>Слабкі слова</h3><p>Слова, де було найбільше помилок.</p></div><button id="studyWeakBtn" class="small-btn">Вчити</button></div>
+        <div id="weakWords" class="word-list"><div class="empty-note">Поки немає статистики — пройди вікторину або тест.</div></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><h3>Резервна копія прогресу</h3><p>Прогрес зберігається на цьому пристрої. Можна зберегти копію у Files.</p></div></div>
+        <div class="backup-actions"><button id="exportProgressBtn" class="big-secondary">Експорт прогресу</button><label class="big-secondary file-label">Імпорт прогресу<input id="importProgressInput" type="file" accept="application/json,.json" hidden /></label></div>
+      </section>
     </section>
 
     <section class="settings-card">
       <div><strong>Щоденна ціль</strong><span id="goalLabel">20 слів</span></div>
       <input id="goalRange" type="range" min="5" max="50" step="5" value="20" />
-      <small>Прогрес зберігається на цьому пристрої автоматично.</small>
+      <small>Картки, вікторини, тести та статистика зберігаються автоматично на цьому пристрої.</small>
     </section>
 
-    <footer>Oxford 5000 edition · 4 974 навчальні картки: Oxford 3000 + розширення B2–C1. Повторні headwords із різними рівнями можуть бути окремими картками.</footer>
+    <footer>Oxford 5000 edition · 4 974 навчальні картки · прогрес зберігається локально. Резервну копію можна експортувати у вкладці «Прогрес».</footer>
   </main>
 <script src="app.js"></script>
 </body>
