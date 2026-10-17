@@ -1,0 +1,752 @@
+[
+  {
+    "id": "town-mouse-country-mouse",
+    "title": "The Town Mouse and the Country Mouse",
+    "level": "A1",
+    "author": "Adapted from Aesop",
+    "icon": "🐭",
+    "description": "A simple story about two mice, two homes, and what really feels comfortable.",
+    "sourceNote": "Original simplified retelling based on a public-domain fable.",
+    "phrases": {
+      "come and visit me": "приходь до мене в гості",
+      "in the country": "у сільській місцевості",
+      "in the city": "у місті",
+      "a lot of": "багато",
+      "all night": "усю ніч",
+      "at last": "нарешті",
+      "be careful": "будь обережний",
+      "home is best": "вдома найкраще"
+    },
+    "chapters": [
+      {
+        "title": "A Visitor from the City",
+        "sentences": [
+          [
+            "Tom is a small mouse who lives in the country.",
+            "Том — маленька миша, яка живе в сільській місцевості."
+          ],
+          [
+            "His home is quiet, and there are green fields around it.",
+            "Його дім тихий, а навколо нього зелені поля."
+          ],
+          [
+            "One morning, his cousin Max comes from the city.",
+            "Одного ранку його двоюрідний брат Макс приїжджає з міста."
+          ],
+          [
+            "Tom is happy to see him and says, ‘Come and visit me for two days.’",
+            "Том радий його бачити й каже: «Погостюй у мене два дні»."
+          ],
+          [
+            "Max looks around and smiles, but he thinks the country is very quiet.",
+            "Макс озирається й усміхається, але вважає, що в селі дуже тихо."
+          ],
+          [
+            "There are no shops, no busy streets, and no bright lights.",
+            "Тут немає магазинів, жвавих вулиць і яскравих вогнів."
+          ],
+          [
+            "Tom says, ‘That is why I like it here.’",
+            "Том каже: «Саме тому мені тут подобається»."
+          ],
+          [
+            "The two mice walk through the fields and talk until evening.",
+            "Дві миші гуляють полями й розмовляють до вечора."
+          ]
+        ]
+      },
+      {
+        "title": "Dinner in the Country",
+        "sentences": [
+          [
+            "For dinner, Tom brings bread, cheese, apples, and a few nuts.",
+            "На вечерю Том приносить хліб, сир, яблука та трохи горіхів."
+          ],
+          [
+            "Max eats a little, but he is not very excited.",
+            "Макс трохи їсть, але не дуже вражений."
+          ],
+          [
+            "‘In the city, I eat cake, fruit, meat, and many other things,’ he says.",
+            "«У місті я їм торт, фрукти, м’ясо та багато іншого», — каже він."
+          ],
+          [
+            "Tom has never seen so much food.",
+            "Том ніколи не бачив стільки їжі."
+          ],
+          [
+            "Max says, ‘Come with me tomorrow and you can try it.’",
+            "Макс каже: «Поїдь зі мною завтра, і ти зможеш це спробувати»."
+          ],
+          [
+            "Tom is curious, so he agrees.",
+            "Тому цікаво, тому він погоджується."
+          ],
+          [
+            "That night, the country is dark and peaceful.",
+            "Тієї ночі в селі темно й спокійно."
+          ],
+          [
+            "Max finds it hard to sleep because it is too quiet for him.",
+            "Максу важко заснути, бо для нього тут надто тихо."
+          ]
+        ]
+      },
+      {
+        "title": "A Night in the City",
+        "sentences": [
+          [
+            "The next day, the mice travel to the city.",
+            "Наступного дня миші їдуть до міста."
+          ],
+          [
+            "Tom sees cars, people, shops, and lights everywhere.",
+            "Том бачить усюди машини, людей, магазини та вогні."
+          ],
+          [
+            "At first, everything looks exciting.",
+            "Спочатку все здається захопливим."
+          ],
+          [
+            "At night, Max takes Tom into a large house.",
+            "Уночі Макс веде Тома у великий будинок."
+          ],
+          [
+            "There is a lot of delicious food on the table.",
+            "На столі багато смачної їжі."
+          ],
+          [
+            "The mice start to eat, but suddenly a door opens.",
+            "Миші починають їсти, але раптом відчиняються двері."
+          ],
+          [
+            "A big cat runs into the room, and the mice hide under a chair.",
+            "Великий кіт забігає в кімнату, і миші ховаються під стільцем."
+          ],
+          [
+            "Tom’s heart beats very fast.",
+            "Серце Тома б’ється дуже швидко."
+          ]
+        ]
+      },
+      {
+        "title": "Home Is Best",
+        "sentences": [
+          [
+            "The cat finally leaves, and Max comes out again.",
+            "Кіт нарешті йде, і Макс знову виходить."
+          ],
+          [
+            "‘Now we can finish dinner,’ he says.",
+            "«Тепер ми можемо закінчити вечерю», — каже він."
+          ],
+          [
+            "But Tom does not want any more food.",
+            "Але Том більше не хоче їсти."
+          ],
+          [
+            "‘Your food is wonderful, but I am afraid all the time,’ he says.",
+            "«Твоя їжа чудова, але я весь час боюся», — каже він."
+          ],
+          [
+            "Tom decides to go home in the morning.",
+            "Том вирішує повернутися додому вранці."
+          ],
+          [
+            "He is happy when he sees the quiet fields again.",
+            "Він щасливий, коли знову бачить тихі поля."
+          ],
+          [
+            "He eats simple bread and cheese and feels safe.",
+            "Він їсть простий хліб із сиром і почувається в безпеці."
+          ],
+          [
+            "For Tom, a quiet home is better than a rich but dangerous life.",
+            "Для Тома тихий дім кращий за багате, але небезпечне життя."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "little-red-hen",
+    "title": "The Little Red Hen",
+    "level": "A1",
+    "author": "Traditional tale",
+    "icon": "🐔",
+    "description": "A short story about work, help, and why effort matters.",
+    "sourceNote": "Original simplified retelling based on a public-domain traditional tale.",
+    "phrases": {
+      "who will help me": "хто мені допоможе",
+      "not me": "не я",
+      "every day": "щодня",
+      "work hard": "важко працювати",
+      "at the end": "наприкінці",
+      "smells wonderful": "чудово пахне",
+      "ready to eat": "готовий до їжі",
+      "do the work": "виконувати роботу"
+    },
+    "chapters": [
+      {
+        "title": "Seeds in the Yard",
+        "sentences": [
+          [
+            "A little red hen lives on a small farm.",
+            "Маленька руда курочка живе на невеликій фермі."
+          ],
+          [
+            "She lives with a lazy cat, a sleepy dog, and a noisy duck.",
+            "Вона живе з ледачим котом, сонним собакою та галасливою качкою."
+          ],
+          [
+            "One day, the hen finds some wheat seeds in the yard.",
+            "Одного дня курочка знаходить у дворі насіння пшениці."
+          ],
+          [
+            "She asks, ‘Who will help me plant these seeds?’",
+            "Вона запитує: «Хто допоможе мені посадити це насіння?»"
+          ],
+          [
+            "‘Not me,’ says the cat.",
+            "«Не я», — каже кіт."
+          ],
+          [
+            "‘Not me,’ says the dog.",
+            "«Не я», — каже собака."
+          ],
+          [
+            "‘Not me,’ says the duck.",
+            "«Не я», — каже качка."
+          ],
+          [
+            "So the little red hen plants the seeds by herself.",
+            "Тож маленька руда курочка садить насіння сама."
+          ]
+        ]
+      },
+      {
+        "title": "The Wheat Grows",
+        "sentences": [
+          [
+            "The hen gives the seeds water every day.",
+            "Курочка поливає насіння щодня."
+          ],
+          [
+            "After some time, green plants begin to grow.",
+            "Через деякий час починають рости зелені рослини."
+          ],
+          [
+            "The hen asks the others to help her again.",
+            "Курочка знову просить інших допомогти їй."
+          ],
+          [
+            "The cat is sleeping in the sun.",
+            "Кіт спить на сонці."
+          ],
+          [
+            "The dog wants to play, and the duck wants to swim.",
+            "Собака хоче гратися, а качка хоче плавати."
+          ],
+          [
+            "Nobody wants to work.",
+            "Ніхто не хоче працювати."
+          ],
+          [
+            "The hen works hard and takes care of the wheat alone.",
+            "Курочка важко працює й сама доглядає за пшеницею."
+          ],
+          [
+            "At the end of summer, the wheat is tall and golden.",
+            "Наприкінці літа пшениця висока й золота."
+          ]
+        ]
+      },
+      {
+        "title": "Making Bread",
+        "sentences": [
+          [
+            "The hen cuts the wheat and takes it to the mill.",
+            "Курочка зрізає пшеницю й несе її до млина."
+          ],
+          [
+            "There, the wheat becomes flour.",
+            "Там пшениця перетворюється на борошно."
+          ],
+          [
+            "Back at the farm, she asks, ‘Who will help me make bread?’",
+            "Повернувшись на ферму, вона запитує: «Хто допоможе мені спекти хліб?»"
+          ],
+          [
+            "Again, the cat, the dog, and the duck all say no.",
+            "Знову кіт, собака й качка всі відмовляються."
+          ],
+          [
+            "The hen mixes the flour with water and makes dough.",
+            "Курочка змішує борошно з водою й робить тісто."
+          ],
+          [
+            "She puts the bread into the oven.",
+            "Вона ставить хліб у піч."
+          ],
+          [
+            "Soon the whole house smells wonderful.",
+            "Незабаром увесь будинок чудово пахне."
+          ],
+          [
+            "Now everyone comes into the kitchen.",
+            "Тепер усі приходять на кухню."
+          ]
+        ]
+      },
+      {
+        "title": "A Fair Lesson",
+        "sentences": [
+          [
+            "The cat, the dog, and the duck are suddenly very hungry.",
+            "Кіт, собака й качка раптом дуже голодні."
+          ],
+          [
+            "They all want to eat the warm bread.",
+            "Усі вони хочуть їсти теплий хліб."
+          ],
+          [
+            "The hen asks, ‘Who helped me plant, water, cut, and cook?’",
+            "Курочка запитує: «Хто допомагав мені садити, поливати, зрізати й готувати?»"
+          ],
+          [
+            "The others look at the floor because they know the answer.",
+            "Інші дивляться в підлогу, бо знають відповідь."
+          ],
+          [
+            "‘I did the work, so I will eat the bread,’ says the hen.",
+            "«Я виконала роботу, тому я й з’їм хліб», — каже курочка."
+          ],
+          [
+            "This time, the others understand the lesson.",
+            "Цього разу інші розуміють урок."
+          ],
+          [
+            "The next morning, they help the hen with the farm work.",
+            "Наступного ранку вони допомагають курочці з роботою на фермі."
+          ],
+          [
+            "Working together makes the day easier for everyone.",
+            "Коли всі працюють разом, день стає легшим для кожного."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "secret-garden-a2",
+    "title": "The Secret Garden",
+    "level": "A2",
+    "author": "Adapted from Frances Hodgson Burnett",
+    "icon": "🌿",
+    "description": "Mary finds a locked garden and a new life in a large old house in Yorkshire.",
+    "sourceNote": "Original A2 simplified retelling based on the public-domain novel The Secret Garden (1911).",
+    "phrases": {
+      "for the first time": "уперше",
+      "a long time ago": "дуже давно",
+      "look after": "доглядати за",
+      "on the other side": "з іншого боку",
+      "keep a secret": "зберігати таємницю",
+      "get stronger": "ставати сильнішим",
+      "little by little": "поступово",
+      "come back to life": "повертатися до життя"
+    },
+    "chapters": [
+      {
+        "title": "Mary Comes to Yorkshire",
+        "sentences": [
+          [
+            "Mary Lennox is ten years old when she comes to live in Yorkshire.",
+            "Мері Леннокс десять років, коли вона приїжджає жити в Йоркшир."
+          ],
+          [
+            "She has lived in India, but now she must stay with her uncle in England.",
+            "Вона жила в Індії, але тепер має залишитися зі своїм дядьком в Англії."
+          ],
+          [
+            "His house, Misselthwaite Manor, is very large and has many closed rooms.",
+            "Його будинок, маєток Місселтвейт, дуже великий і має багато зачинених кімнат."
+          ],
+          [
+            "Mary feels lonely and does not know what to do all day.",
+            "Мері почувається самотньою й не знає, що робити цілий день."
+          ],
+          [
+            "A housemaid named Martha tells her about the gardens outside.",
+            "Покоївка на ім’я Марта розповідає їй про сади надворі."
+          ],
+          [
+            "Martha also tells Mary about a garden that has been locked for ten years.",
+            "Марта також розповідає Мері про сад, який був замкнений десять років."
+          ],
+          [
+            "Nobody is allowed to go inside it.",
+            "Нікому не дозволяють заходити туди."
+          ],
+          [
+            "For the first time, Mary becomes interested in something.",
+            "Уперше Мері чимось по-справжньому цікавиться."
+          ]
+        ]
+      },
+      {
+        "title": "The Key in the Earth",
+        "sentences": [
+          [
+            "Mary begins to spend more time outside.",
+            "Мері починає проводити більше часу надворі."
+          ],
+          [
+            "She meets Ben Weatherstaff, an old gardener who does not talk very much.",
+            "Вона знайомиться з Беном Везерстаффом, старим садівником, який небагато розмовляє."
+          ],
+          [
+            "A friendly robin often follows Mary through the garden.",
+            "Дружня малинівка часто літає за Мері по саду."
+          ],
+          [
+            "One day, the bird stops near some soft earth.",
+            "Одного дня пташка зупиняється біля м’якої землі."
+          ],
+          [
+            "Mary looks down and sees something metal under the soil.",
+            "Мері дивиться вниз і бачить щось металеве під землею."
+          ],
+          [
+            "It is an old key.",
+            "Це старий ключ."
+          ],
+          [
+            "Mary remembers the locked garden and wonders if this key can open its door.",
+            "Мері згадує замкнений сад і думає, чи може цей ключ відчинити його двері."
+          ],
+          [
+            "She puts the key in her pocket and decides to keep it a secret.",
+            "Вона кладе ключ у кишеню й вирішує зберегти це в таємниці."
+          ]
+        ]
+      },
+      {
+        "title": "The Hidden Door",
+        "sentences": [
+          [
+            "A few days later, the wind moves some plants on an old wall.",
+            "Через кілька днів вітер ворушить рослини на старій стіні."
+          ],
+          [
+            "Behind them, Mary sees a small wooden door.",
+            "За ними Мері бачить маленькі дерев’яні двері."
+          ],
+          [
+            "She tries the key, and the door opens.",
+            "Вона пробує ключ, і двері відчиняються."
+          ],
+          [
+            "On the other side is the secret garden.",
+            "З іншого боку — таємний сад."
+          ],
+          [
+            "The garden looks wild and empty, but Mary can see small green leaves.",
+            "Сад виглядає диким і порожнім, але Мері бачить маленькі зелені листочки."
+          ],
+          [
+            "She understands that some of the plants are still alive.",
+            "Вона розуміє, що деякі рослини все ще живі."
+          ],
+          [
+            "Mary starts to remove dead leaves and give the plants space to grow.",
+            "Мері починає прибирати сухе листя й давати рослинам місце для росту."
+          ],
+          [
+            "The work makes her feel calm and happy.",
+            "Ця робота допомагає їй почуватися спокійною й щасливою."
+          ]
+        ]
+      },
+      {
+        "title": "Colin",
+        "sentences": [
+          [
+            "At night, Mary sometimes hears a child crying somewhere in the house.",
+            "Уночі Мері іноді чує, як десь у будинку плаче дитина."
+          ],
+          [
+            "She finally finds a boy named Colin in a bedroom far from her room.",
+            "Зрештою вона знаходить хлопчика на ім’я Колін у спальні далеко від своєї кімнати."
+          ],
+          [
+            "Colin is her cousin and believes that he is very ill.",
+            "Колін — її двоюрідний брат і вважає, що він дуже хворий."
+          ],
+          [
+            "He spends most of his time in bed and is afraid of becoming weaker.",
+            "Він проводить більшість часу в ліжку й боїться стати ще слабшим."
+          ],
+          [
+            "Mary tells him about the secret garden.",
+            "Мері розповідає йому про таємний сад."
+          ],
+          [
+            "Colin wants to see it, so Mary and her friend Dickon take him outside.",
+            "Колін хоче його побачити, тому Мері та її друг Дікон вивозять його надвір."
+          ],
+          [
+            "Fresh air, sunlight, and friendship slowly change Colin.",
+            "Свіже повітря, сонячне світло й дружба поступово змінюють Коліна."
+          ],
+          [
+            "He starts to believe that he can get stronger.",
+            "Він починає вірити, що може стати сильнішим."
+          ]
+        ]
+      },
+      {
+        "title": "The Garden Changes Them",
+        "sentences": [
+          [
+            "Every day, the children work and play in the garden.",
+            "Щодня діти працюють і граються в саду."
+          ],
+          [
+            "Little by little, flowers open and the trees become green again.",
+            "Поступово розкриваються квіти, а дерева знову зеленіють."
+          ],
+          [
+            "Mary becomes kinder and more open with other people.",
+            "Мері стає добрішою й відкритішою до інших людей."
+          ],
+          [
+            "Colin learns to stand, walk, and finally run.",
+            "Колін вчиться стояти, ходити й зрештою бігати."
+          ],
+          [
+            "The garden seems to come back to life with the children.",
+            "Здається, що сад повертається до життя разом із дітьми."
+          ],
+          [
+            "When Colin’s father returns home, he cannot believe the change.",
+            "Коли батько Коліна повертається додому, він не може повірити в ці зміни."
+          ],
+          [
+            "He sees his son walking toward him in the garden.",
+            "Він бачить свого сина, який іде до нього садом."
+          ],
+          [
+            "The secret garden is no longer a place of sadness; it has become a place of hope.",
+            "Таємний сад більше не є місцем смутку; він став місцем надії."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "blue-carbuncle-a2",
+    "title": "The Blue Carbuncle",
+    "level": "A2",
+    "author": "Adapted from Arthur Conan Doyle",
+    "icon": "🔎",
+    "description": "Sherlock Holmes follows a strange clue from an old hat and a Christmas goose.",
+    "sourceNote": "Original A2 simplified retelling based on the public-domain Sherlock Holmes story The Blue Carbuncle (1892).",
+    "phrases": {
+      "on the way home": "дорогою додому",
+      "belong to": "належати",
+      "look for": "шукати",
+      "find out": "з’ясувати",
+      "instead of": "замість",
+      "tell the truth": "сказати правду",
+      "in the end": "зрештою",
+      "a second chance": "другий шанс"
+    },
+    "chapters": [
+      {
+        "title": "A Strange Hat",
+        "sentences": [
+          [
+            "It is a cold morning in London, two days after Christmas.",
+            "У Лондоні холодний ранок, через два дні після Різдва."
+          ],
+          [
+            "Dr Watson visits his friend Sherlock Holmes at Baker Street.",
+            "Доктор Ватсон відвідує свого друга Шерлока Холмса на Бейкер-стріт."
+          ],
+          [
+            "Holmes has an old black hat on the table.",
+            "На столі в Холмса лежить старий чорний капелюх."
+          ],
+          [
+            "A man found the hat and a Christmas goose in the street after a small fight.",
+            "Чоловік знайшов капелюх і різдвяну гуску на вулиці після невеликої бійки."
+          ],
+          [
+            "The owner ran away and left both things behind.",
+            "Власник утік і залишив обидві речі."
+          ],
+          [
+            "Holmes studies the hat carefully.",
+            "Холмс уважно вивчає капелюх."
+          ],
+          [
+            "He says the owner is probably intelligent but has had a difficult year.",
+            "Він каже, що власник, імовірно, розумний, але мав важкий рік."
+          ],
+          [
+            "Watson is surprised that Holmes can learn so much from one old hat.",
+            "Ватсон здивований, що Холмс може дізнатися так багато з одного старого капелюха."
+          ]
+        ]
+      },
+      {
+        "title": "A Blue Stone",
+        "sentences": [
+          [
+            "The goose has already been taken home for dinner by the man who found it.",
+            "Чоловік, який знайшов гуску, уже забрав її додому на вечерю."
+          ],
+          [
+            "Soon he returns to Baker Street with something amazing.",
+            "Незабаром він повертається на Бейкер-стріт із чимось дивовижним."
+          ],
+          [
+            "Inside the goose, his wife found a beautiful blue stone.",
+            "Усередині гуски його дружина знайшла красивий синій камінь."
+          ],
+          [
+            "Holmes knows about the stone immediately.",
+            "Холмс одразу впізнає цей камінь."
+          ],
+          [
+            "It is the Blue Carbuncle, a famous jewel that was stolen from a hotel.",
+            "Це Блакитний карбункул — відома коштовність, яку вкрали з готелю."
+          ],
+          [
+            "A worker at the hotel is in prison because the police think he stole it.",
+            "Працівник готелю перебуває у в’язниці, бо поліція думає, що він її вкрав."
+          ],
+          [
+            "Holmes now wants to find the owner of the goose.",
+            "Тепер Холмс хоче знайти власника гуски."
+          ],
+          [
+            "He puts a short notice in the newspapers.",
+            "Він розміщує коротке оголошення в газетах."
+          ]
+        ]
+      },
+      {
+        "title": "Following the Goose",
+        "sentences": [
+          [
+            "That evening, a man named Henry Baker comes to Baker Street.",
+            "Того вечора чоловік на ім’я Генрі Бейкер приходить на Бейкер-стріт."
+          ],
+          [
+            "He is very happy to get his old hat back.",
+            "Він дуже радий повернути свій старий капелюх."
+          ],
+          [
+            "Holmes asks him where he bought the goose.",
+            "Холмс запитує його, де він купив гуску."
+          ],
+          [
+            "Baker explains that it came from a local pub.",
+            "Бейкер пояснює, що вона була з місцевого пабу."
+          ],
+          [
+            "Holmes gives him another goose instead of the first one.",
+            "Холмс дає йому іншу гуску замість першої."
+          ],
+          [
+            "Baker does not know anything about the blue stone, so Holmes lets him leave.",
+            "Бейкер нічого не знає про синій камінь, тому Холмс дозволяє йому піти."
+          ],
+          [
+            "Holmes and Watson visit the pub and then a market.",
+            "Холмс і Ватсон відвідують паб, а потім ринок."
+          ],
+          [
+            "Step by step, they find the place where the special goose came from.",
+            "Крок за кроком вони знаходять місце, звідки взялася особлива гуска."
+          ]
+        ]
+      },
+      {
+        "title": "The Frightened Man",
+        "sentences": [
+          [
+            "At the market, Holmes sees a nervous man asking questions about the same goose.",
+            "На ринку Холмс бачить нервового чоловіка, який запитує про ту саму гуску."
+          ],
+          [
+            "The man’s name is James Ryder, and he works at the hotel where the jewel disappeared.",
+            "Чоловіка звати Джеймс Райдер, і він працює в готелі, де зникла коштовність."
+          ],
+          [
+            "Holmes invites him to Baker Street.",
+            "Холмс запрошує його на Бейкер-стріт."
+          ],
+          [
+            "There, Holmes shows him the Blue Carbuncle.",
+            "Там Холмс показує йому Блакитний карбункул."
+          ],
+          [
+            "Ryder becomes white with fear and finally tells the truth.",
+            "Райдер блідне від страху й зрештою розповідає правду."
+          ],
+          [
+            "He stole the jewel and hid it inside one of his sister’s geese.",
+            "Він украв коштовність і сховав її всередині однієї з гусок своєї сестри."
+          ],
+          [
+            "But he chose the wrong goose when he left the farm.",
+            "Але він вибрав не ту гуску, коли залишав ферму."
+          ],
+          [
+            "The goose with the jewel went to the market and then to Henry Baker.",
+            "Гуска з коштовністю потрапила на ринок, а потім до Генрі Бейкера."
+          ]
+        ]
+      },
+      {
+        "title": "A Second Chance",
+        "sentences": [
+          [
+            "Ryder asks Holmes not to send him to the police.",
+            "Райдер просить Холмса не віддавати його поліції."
+          ],
+          [
+            "He says he is sorry and promises never to steal again.",
+            "Він каже, що шкодує, і обіцяє більше ніколи не красти."
+          ],
+          [
+            "Watson expects Holmes to call the police, but Holmes thinks for a long time.",
+            "Ватсон очікує, що Холмс викличе поліцію, але Холмс довго думає."
+          ],
+          [
+            "In the end, Holmes opens the door and tells Ryder to leave.",
+            "Зрештою Холмс відчиняє двері й каже Райдеру піти."
+          ],
+          [
+            "He believes the frightened man has learned a serious lesson.",
+            "Він вважає, що наляканий чоловік отримав серйозний урок."
+          ],
+          [
+            "The innocent hotel worker will be free because there is no case against him now.",
+            "Невинного працівника готелю звільнять, бо тепер проти нього немає справи."
+          ],
+          [
+            "Watson understands that Holmes is not only clever; sometimes he can also be kind.",
+            "Ватсон розуміє, що Холмс не лише розумний; іноді він також може бути добрим."
+          ],
+          [
+            "The strange case of the hat, the goose, and the blue stone is finally over.",
+            "Дивна справа капелюха, гуски та синього каменю нарешті завершена."
+          ]
+        ]
+      }
+    ]
+  }
+]

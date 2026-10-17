@@ -1,0 +1,24 @@
+v4 Reading Edition
+
+Added:
+- Books tab with 4 graded readers (A1-A2)
+- 18 chapters / 144 bilingual sentences
+- Tap a word for Ukrainian meaning, pronunciation and IPA
+- Select a phrase for exact saved phrase translation when available, otherwise contextual sentence translation + word meanings
+- Add book vocabulary directly to learning/review
+- New Cards filter: "З книг"
+- New quiz/test pool: "Слова з книг"
+- Reading progress: last chapter + completed chapters
+- Read-aloud chapter button (British device voice)
+- Reader text-size control
+- 29 extra reader-support vocabulary entries; total vocabulary cards now 5,003
+- Reading metrics in Progress
+- Progress export/import now includes reading progress and saved book vocabulary
+
+Books:
+- The Town Mouse and the Country Mouse — A1
+- The Little Red Hen — A1
+- The Secret Garden — A2
+- The Blue Carbuncle — A2
+
+The book texts are original simplified retellings based on public-domain stories. They are not official graded-reader editions from Oxford, Penguin, Cambridge, or other publishers.

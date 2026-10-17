@@ -33,23 +33,25 @@
       </div>
     </section>
 
-    <nav class="mode-tabs" id="modeTabs" aria-label="Режим навчання">
+    <nav class="mode-tabs five-tabs" id="modeTabs" aria-label="Режим навчання">
       <button data-view="study" class="active">Картки</button>
       <button data-view="quiz">Вікторина</button>
       <button data-view="test">Тест</button>
+      <button data-view="books">Книги</button>
       <button data-view="progress">Прогрес</button>
     </nav>
 
     <section id="studyView" class="view active">
       <section class="controls">
-        <div class="segmented four" id="orderControl">
+        <div class="segmented five" id="orderControl">
           <button data-order="random" class="active">Random</button>
           <button data-order="az">A–Z</button>
           <button data-order="review">Помилки</button>
+          <button data-order="books">📖 З книг</button>
           <button data-order="fav">★ Обрані</button>
         </div>
         <div class="control-grid three">
-          <label><span>Список</span><select id="bandSelect"><option value="All">Oxford 5000 · Усі</option></select></label>
+          <label><span>Список</span><select id="bandSelect"><option value="All">Усі 5000+</option></select></label>
           <label><span>Тема</span><select id="topicSelect"><option value="All">Усі теми</option></select></label>
           <label><span>Режим</span><select id="directionSelect"><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
         </div>
@@ -93,7 +95,7 @@
         <div class="setup-grid">
           <label><span>Напрямок</span><select id="quizDirection"><option value="mixed">Змішано</option><option value="en-uk">English → Українська</option><option value="uk-en">Українська → English</option></select></label>
           <label><span>Кількість</span><select id="quizCount"><option value="10">10 питань</option><option value="20" selected>20 питань</option><option value="30">30 питань</option><option value="50">50 питань</option></select></label>
-          <label><span>Слова</span><select id="quizPool"><option value="all">Усі Oxford 5000</option><option value="core">Oxford 3000</option><option value="extra">Oxford 5000 extra</option><option value="review">Тільки помилки</option><option value="current">Поточний фільтр карток</option></select></label>
+          <label><span>Слова</span><select id="quizPool"><option value="all">Усі слова 5000+</option><option value="core">Oxford 3000</option><option value="extra">Oxford 5000 extra</option><option value="review">Тільки помилки</option><option value="books">Слова з книг</option><option value="current">Поточний фільтр карток</option></select></label>
         </div>
         <button id="startQuizBtn" class="big-primary">Почати вікторину</button>
       </section>
@@ -125,7 +127,7 @@
         <div class="setup-grid">
           <label><span>Тип</span><select id="testMode"><option value="uk-en">Українська → English</option><option value="listen-en">Аудіювання → English</option></select></label>
           <label><span>Кількість</span><select id="testCount"><option value="10">10 слів</option><option value="20" selected>20 слів</option><option value="30">30 слів</option></select></label>
-          <label><span>Слова</span><select id="testPool"><option value="all">Усі Oxford 5000</option><option value="core">Oxford 3000</option><option value="extra">Oxford 5000 extra</option><option value="review">Тільки помилки</option><option value="current">Поточний фільтр карток</option></select></label>
+          <label><span>Слова</span><select id="testPool"><option value="all">Усі слова 5000+</option><option value="core">Oxford 3000</option><option value="extra">Oxford 5000 extra</option><option value="review">Тільки помилки</option><option value="books">Слова з книг</option><option value="current">Поточний фільтр карток</option></select></label>
         </div>
         <button id="startTestBtn" class="big-primary">Почати тест</button>
       </section>
@@ -149,6 +151,52 @@
       </section>
     </section>
 
+
+    <section id="booksView" class="view">
+      <section id="bookLibrary" class="books-library">
+        <section class="panel books-hero">
+          <div>
+            <div class="eyebrow">АДАПТОВАНЕ ЧИТАННЯ</div>
+            <h2>Книги A1–A2</h2>
+            <p>Натисни слово — побачиш переклад і вимову. Виділи фразу — отримаєш переклад у контексті. Слова можна одразу додавати до вивчення.</p>
+          </div>
+          <div class="books-summary"><strong id="booksReadCount">0</strong><span>розділів прочитано</span></div>
+        </section>
+        <div id="booksGrid" class="books-grid"></div>
+      </section>
+
+      <section id="bookReader" class="book-reader hidden">
+        <div class="reader-toolbar">
+          <button id="backToBooksBtn" class="small-btn">← Бібліотека</button>
+          <div class="reader-actions"><button id="readerSpeakBtn" class="small-btn">🔊 Розділ</button><button id="readerTextSizeBtn" class="small-btn">Aa</button></div>
+        </div>
+        <section class="panel reader-head">
+          <div class="reader-book-meta"><span id="readerLevel" class="badge">A1</span><span id="readerAuthor" class="muted-inline"></span></div>
+          <h2 id="readerBookTitle"></h2>
+          <div class="reader-chapter-row"><button id="prevChapterBtn" class="chapter-arrow">←</button><div><span id="readerChapterLabel" class="side-label">РОЗДІЛ 1</span><h3 id="readerChapterTitle"></h3></div><button id="nextChapterBtn" class="chapter-arrow">→</button></div>
+          <div class="mini-track"><div id="readerProgressBar"></div></div>
+        </section>
+        <section class="panel reader-help">
+          <strong>Як читати</strong>
+          <span>Торкнися слова для перекладу • виділи фразу для контекстного перекладу</span>
+        </section>
+        <article id="readerText" class="reader-text panel"></article>
+        <section class="reader-bottom-actions">
+          <button id="markChapterReadBtn" class="big-primary">✓ Позначити розділ прочитаним</button>
+        </section>
+      </section>
+
+      <div id="wordPopup" class="lookup-sheet hidden" role="dialog" aria-live="polite">
+        <div class="lookup-handle"></div>
+        <div class="lookup-top"><div><div id="lookupLabel" class="eyebrow">СЛОВО</div><h3 id="lookupWord"></h3></div><button id="closeLookupBtn" class="icon-btn" aria-label="Закрити">×</button></div>
+        <div id="lookupTranslation" class="lookup-translation"></div>
+        <div id="lookupPron" class="pron"></div>
+        <div id="lookupIpa" class="ipa"></div>
+        <div id="lookupContext" class="lookup-context"></div>
+        <div class="lookup-actions"><button id="lookupSpeakBtn" class="big-secondary">🔊 Listen</button><button id="addBookWordBtn" class="big-primary">+ Додати до вивчення</button></div>
+      </div>
+    </section>
+
     <section id="progressView" class="view">
       <section class="panel progress-dashboard">
         <div class="dashboard-title"><div><div class="eyebrow">ТВОЯ СТАТИСТИКА</div><h2>Прогрес навчання</h2></div><div class="streak-pill">🔥 <b id="dashStreak">0</b> днів</div></div>
@@ -159,6 +207,8 @@
           <div class="metric"><span>Тестів</span><strong id="dashTests">0</strong><small>завершено</small></div>
           <div class="metric"><span>Краща вікторина</span><strong id="dashBestQuiz">—</strong><small>найвищий %</small></div>
           <div class="metric"><span>Кращий тест</span><strong id="dashBestTest">—</strong><small>найвищий %</small></div>
+          <div class="metric"><span>Слів з книг</span><strong id="dashBookWords">0</strong><small>додано до вивчення</small></div>
+          <div class="metric"><span>Читання</span><strong id="dashReadChapters">0</strong><small>розділів прочитано</small></div>
         </div>
       </section>
 
@@ -176,10 +226,10 @@
     <section class="settings-card">
       <div><strong>Щоденна ціль</strong><span id="goalLabel">20 слів</span></div>
       <input id="goalRange" type="range" min="5" max="50" step="5" value="20" />
-      <small>Картки, вікторини, тести та статистика зберігаються автоматично на цьому пристрої.</small>
+      <small>Картки, вікторини, тести, книги та прогрес читання зберігаються автоматично на цьому пристрої.</small>
     </section>
 
-    <footer>Oxford 5000 edition · 4 974 навчальні картки · прогрес зберігається локально. Резервну копію можна експортувати у вкладці «Прогрес».</footer>
+    <footer>Oxford 5000 edition · 5 003 навчальні картки · адаптовані книги A1–A2 · прогрес зберігається локально. Резервну копію можна експортувати у вкладці «Прогрес».</footer>
   </main>
 <script src="app.js"></script>
 </body>
